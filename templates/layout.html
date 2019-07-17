@@ -12,15 +12,15 @@
     {% endblock %}
   </div>
  <script>
- 	var del = document.querySelectorAll('#delete')
- 	del.forEach(function (btn) {
- 		btn.addEventListener('click', function (event) {
- 			var con = confirm('Do you want delete this member?')
- 			if (con === false) {
- 				event.preventDefault()
- 			}
- 		})
- 	})
+  var del = document.querySelectorAll('#delete')
+  del.forEach(function (btn) {
+    btn.addEventListener('click', function (event) {
+      var con = confirm('Do you want delete this member?')
+      if (con === false) {
+        event.preventDefault()
+      }
+    })
+  })
  </script>
 </body>
 </html>

@@ -3,24 +3,24 @@
 <div class="card border-primary mb-2" style="max-width: 20rem; margin: auto; margin-top: 20px;">
   <div class="card-header">Update user with id {{user.id}}</div>
   <div class="card-body">
-	<form action="/edit/{{user.id}}" method="POST">
-		<div class="form-group">
-		  <input type="text" class="form-control" name="username" value="{{user.username}}" required>
-		</div>
-		<div class="form-group">
-		  <input type="text" class="form-control" name="fullname" value="{{user.fullname}}" required>
-		</div>
-		<div class="form-group">
-		  <input type="text" class="form-control" name="email" value="{{user.email}}" required>
-		</div>
-		<div class="form-group">
-		  <input type="number" class="form-control" name="age" value="{{user.age}}" required>
-		</div>
-		<div class="form-group" style="text-align: center;">
-			<a href="/" class="btn btn-info">Cancel</a>
-			<button class="btn btn-info" type="submit">Send</button>
-		</div>
-	</form>
+    <form action="/edit/{{user.id}}" method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control" name="username" value="{{user.username}}" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="fullname" value="{{user.fullname}}" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="email" value="{{user.email}}" required>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" name="age" value="{{user.age}}" required>
+        </div>
+        <div class="form-group" style="text-align: center;">
+            <a href="/" class="btn btn-info">Cancel</a>
+            <button class="btn btn-info" type="submit">Send</button>
+        </div>
+    </form>
   </div>
 </div>
 {% endblock %}
